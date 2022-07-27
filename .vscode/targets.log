@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 25 13:37:33 2022
+# Make data base, printed on Wed Jul 27 12:48:16 2022
 
 # Variables
 
@@ -47,7 +49,7 @@ VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:51834
+JOURNAL_STREAM = 8:44821
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -69,9 +71,9 @@ MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=77b3548297dd44f2cd42fa8d62ddcbcd
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=b48072db70244f6c071faf5062e0692a
 # environment
-MANAGERPID = 2047
+MANAGERPID = 2062
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -87,7 +89,7 @@ PATH = /home/samet/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/samet-ABRA-A5-V16-6:@/tmp/.ICE-unix/2266,unix/samet-ABRA-A5-V16-6:/tmp/.ICE-unix/2266
+SESSION_MANAGER = local/samet-ABRA-A5-V16-6:@/tmp/.ICE-unix/2280,unix/samet-ABRA-A5-V16-6:/tmp/.ICE-unix/2280
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -103,7 +105,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 3d20dcedfee949ce850b516219eb74a7
+INVOCATION_ID = 233419cabaea4ada8b1dd0b6f4ba5d23
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/102/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
@@ -125,7 +127,7 @@ PWD = /home/samet/Desktop/cpp
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2226
+SSH_AGENT_PID = 2240
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -235,11 +237,11 @@ LC_ALL = C
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/ebc2d1a6_357a_488e_8b91_cb49b458f65f
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/32d96bf4_30d0_41f3_ae15_ee61b190b480
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.157
+GNOME_TERMINAL_SERVICE = :1.131
 # default
 SUFFIXES := 
 # environment
@@ -261,9 +263,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 9007
+VSCODE_PID = 135960
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=77b3548297dd44f2cd42fa8d62ddcbcd
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b48072db70244f6c071faf5062e0692a
 # variable set hash-table stats:
 # Load=127/1024=12%, Rehash=0, Collisions=18/149=12%
 
@@ -273,9 +275,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=77b3548297dd44f2cd42fa8
 
 # Directories
 
-# . (device 66309, inode 1073157): 10 files, no impossibilities.
+# . (device 66309, inode 1073157): 8 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 8 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -301,9 +303,6 @@ Makefile:
 makefile:
 #  Implicit rule search has been done.
 #  File does not exist.
- 
-make: *** No rule to make target 'all'.  Stop.
-
 #  File has been updated.
 #  Failed to be updated.
 
@@ -321,6 +320,7 @@ GNUmakefile:
 #  Failed to be updated.
 
 # files hash-table stats:
+ 
 # Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
@@ -328,12 +328,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 154 B / avg = 8 B
-# current buf: size = 8162 B / used = 154 B / count = 18 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 16 / storage = 137 B / avg = 8 B
+# current buf: size = 8162 B / used = 137 B / count = 16 / avg = 8 B
 
-# strcache performance: lookups = 21 / hit rate = 14%
+# strcache performance: lookups = 19 / hit rate = 15%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=1/21=5%
-# Finished Make data base on Mon Jul 25 13:37:33 2022
+# Load=16/8192=0%, Rehash=0, Collisions=1/19=5%
+# Finished Make data base on Wed Jul 27 12:48:16 2022
 
  
