@@ -24,7 +24,6 @@ void file_operations::get_file_data()
   
 }
 
-
 void file_operations::data_changed()
 {
     int found_str1_index = 0;

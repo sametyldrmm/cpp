@@ -1,9 +1,10 @@
 #include "Zombie.hpp"
 
-int main()
+int main(void)
 {
-	Zombie *zombie = zombieHorde(5,"zombi_heap");
-    
-	delete[] zombie;    
+	Zombie *horde = zombieHorde(10, "Spitter");
+
+	delete [] horde;
+
 	return (0);
 }

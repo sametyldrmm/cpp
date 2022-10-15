@@ -1,23 +1,17 @@
-#include"Weapon.hpp"
-#include"HumanA.hpp"
-#include"HumanB.hpp"
+#include "HumanB.hpp"
 
-void HumanB::setWeapon(Weapon &weapon)
-{
-    this->weapon = &weapon;
+HumanB::HumanB(std::string name):_name(name){
+	//std::cout << "Human B called " << name << " is alive" << std::endl ;
 }
 
-void HumanB::attack()
-{
-    std::cout << name << " attacks with their"<< this->weapon->get_type() <<std::endl;
+HumanB::~HumanB(void) {
+	//std::cout << "Human B died" << std::endl ;
 }
 
-void HumanB::name_changed(std::string name)
-{
-    this->name = name;
+void HumanB::setWeapon(Weapon &weapon) {
+	_weapon = &weapon ;
 }
 
-HumanB::HumanB(std::string name):weapon(weapon)
-{
-    this->name = name;
+void HumanB::attack(void) const {
+	std::cout << _name << " attacks with their " << _weapon->getType() << std::endl ;
 }

@@ -1,7 +1,15 @@
-#include"harl.hpp"
+#include "Harl.hpp"
+
 
 int main()
 {
-    harl harll;
-    harll.complain("WARNING");
+	Harl	bot;
+
+	bot.complain("debug");
+	bot.complain("info");
+	bot.complain("warning");
+	bot.complain("error");
+	bot.complain("pzeingpzen");
+
+	return (0);
 }

@@ -1,17 +1,19 @@
-# ifndef WEAPON_H
-#define WEAPON_H
+#ifndef WEAPON_H
+# define WEAPON_H
 
-#include <iostream>
-#include <string.h>
+# include <iostream>
 
-class Weapon
-{
-private:
-    std::string type;
-public:
-    Weapon(std::string type);
-    std::string get_type();
-    void setType(std::string type);
+class Weapon {
+
+	public:
+		Weapon(std::string type);
+		Weapon(void);
+		~Weapon(void);
+		const std::string& getType(void) const;
+		void setType(std::string type);
+
+	private:
+		std::string _type;
 };
 
 #endif

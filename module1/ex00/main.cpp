@@ -1,11 +1,11 @@
 #include "Zombie.hpp"
 
-int main()
+int main(void)
 {
-	Zombie *zombie = newZombie("heap");
-	zombie->announce();
-    
-	delete zombie;
-	randomChump("stack");
+	Zombie *zm = newZombie("The Hunter");
+	zm->announce();
+	randomChump("The Boomer");
+	delete zm;
+
 	return (0);
 }

@@ -10,8 +10,6 @@ int main(int argc,char **argv)
         file_op.get_file_data();
         file_op.data_changed();
         file_op.new_file("new_file");
-        while(1)
-            ;
     }
     
 }

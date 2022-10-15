@@ -1,20 +1,34 @@
-CC= clang++
-CPPFLAGS= -Wall -Wextra -Werror -std=c++98
-SRCS= megaphone.cpp
-NAME= megaphone
-OBJS= $(SRCS:.cpp=.o)
+Reset			=		\033[0m						# Text Reset
+R				=		\033[0;31m					# Red
+G				=		\033[0;32m					# Green
 
-all: $(NAME)
+NAME			=		megaphone
 
-$(NAME): $(OBJS)
-	$(CC) $^ $(CPPFLAGS) -o $@
+SRCS			=		megaphone.cpp \
 
-clean:
-	rm -rf $(OBJS)
+OBJS			=		$(SRCS:.cpp=.o)
 
-fclean: clean
-	rm -rf $(NAME)
+DEBUG			=		-g -fsanitize=adress
 
-re: fclean all
+FLAGS			=		-Wall -Werror -Wextra -std=c++98
 
-.PHONY: all clean fclean re
+.c.o			:
+						@c++ $(CFLAGS) -c $< -o $(<:.c=.o)
+
+$(NAME)			:		$(OBJS)
+						@c++ $(FLAGS) $(OBJS) -o $(NAME)
+						@echo "$(G)$(NAME) has been created$(Reset)"
+
+clean			:
+						@rm -f $(OBJS)
+						@echo "$(R)Objects have been removed$(Reset)"
+
+fclean			:		clean
+						@rm -f $(NAME)
+						@echo "$(R)$(NAME) has been removed$(Reset)"
+
+all				:		$(NAME)
+
+re				:		fclean all
+
+.PHONY			:		clean fclean all re
