@@ -1,26 +1,30 @@
-# 42 Piscine C++ - Day 01 Project
+# CPP Module 01: Memory Allocation and References
 
-This project is the second day of an intensive C++ programming language training series designed to teach the fundamentals of C++. These assignments are completed by working intensely for a set amount of time, typically two or three weeks.
+This module is designed to provide an introduction to memory allocation and references in C++ programming. The module covers the basics of pointers, memory allocation, and references in C++.
 
-The focus of Day 01 is the creation and use of class instances, dynamic memory allocation and management, and reference-to-pointer conversion. Below is a list summarizing the scope and content of each assignment.
+The module is divided into four parts, each with its own exercise that covers a specific aspect of memory allocation and references:
 
-## Assignments
+## Exercise 00: Memory Allocation
+In this exercise, you will create a program that allocates memory dynamically using the new keyword and deallocates it using the delete keyword. This exercise is designed to help you get familiar with dynamic memory allocation in C++.
 
-### Assignment 00 - Your Very First Class
-In this assignment, you will create a class, including a constructor and destructor, to manage the behavior of an instance of that class.
+You will be provided with a program that uses the new keyword to allocate memory for a string and an integer. Your task is to modify the program to deallocate the memory using the delete keyword.
 
-### Assignment 01 - Memory Allocation
-In this assignment, you will learn about dynamic memory allocation and management using new and delete. You will use these concepts to create a program that manipulates a string.
+## Exercise 01: Reference
+In this exercise, you will create a program that demonstrates the use of references in C++. This exercise is designed to help you get familiar with the concept of references in C++.
 
-### Assignment 02 - Deep Copy
-In this assignment, you will learn about the concept of "deep copying" and how to implement it in your own classes. You will create a program that copies instances of a class and explore how the behavior of the copied instance can be managed.
+You will be provided with a program that defines a variable and a reference to that variable. Your task is to modify the program to demonstrate the use of references in C++.
 
-### Rush00 - Space Shooter
-For the final assignment of Day 01, you will work in a group to create a simple space shooter game using the concepts you have learned in the previous assignments.
+## Exercise 02: Pointers to Members
+In this exercise, you will create a program that uses pointers to members. This exercise is designed to help you get familiar with the concept of pointers to members in C++.
 
-### Installation
-This project contains .cpp files in separate folders for each assignment. Each assignment folder includes a Makefile, so you can easily compile each assignment.
+You will be provided with a program that defines a Contact class and two member functions that set and get the values of the Contact object. Your task is to modify the program to use pointers to members to set and get the values of the Contact object.
 
-To complete the assignments, you will need a C++ compiler (such as g++) and the Make tool. Before running these assignments, you will need to clone the project onto your computer by following the instructions in the readme.md file.
+## Exercise 03: Serialisation
+In this exercise, you will create a program that serializes a Contact class using binary serialization. This exercise is designed to help you get familiar with binary serialization and data storage in C++.
 
-This is a summary of the Day 01 project. For more detailed information on the scope and content of each assignment, please refer to the PDF file or the readme.md file.
+You will be provided with a program that defines a Contact class and a function that serializes a Contact object to a file. Your task is to modify the program to serialize the Contact object using binary serialization.
+
+Each exercise in this module builds on the previous exercise and will help you gain a solid understanding of memory allocation and references in C++ programming. By the end of this module, you should have a good understanding of basic memory allocation and reference concepts in C++ and be ready to tackle more advanced topics.
+
+## Note
+The exercises mentioned here are grouped according to my personal preference, and are not necessarily the same as those in the official PDF. When I referred to "3 sets", I meant 3 groups of exercises, with each group consisting of 2 or 3 individual exercises. Therefore, there are a total of 6 exercises, which are to be completed in 3 sets.
