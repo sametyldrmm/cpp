@@ -1,25 +1,14 @@
-# 42 Piscine C++ - Day 02 Project
-This project is the third day of an intensive C++ programming language training series designed to teach the fundamentals of C++. These assignments are completed by working intensely for a set amount of time, typically two or three weeks.
+# Ad-hoc polymorphism, operator overloading and Orthodox Canonical class form
+This project explores the topics of ad-hoc polymorphism, operator overloading, and Orthodox Canonical class form. It is divided into four exercises.
 
-The focus of Day 02 is the use of ad hoc polymorphism, operator overload, and canonical classes in C++. Below is a list summarizing the scope and content of each assignment.
+## Exercise 00: My First Class in Orthodox Canonical Form
+This exercise introduces the concept of the Orthodox Canonical Class Form and asks us to create a class following this format. We are given a header file that defines the class interface and we must implement the class methods in a separate implementation file.
 
-## Assignments
+## Exercise 01: Towards a more useful fixed-point number class
+This exercise builds on the previous exercise and asks us to create a class for fixed-point numbers that overloads several operators to allow mathematical operations to be performed on these numbers.
 
-### Assignment 00 - Fixed Point
-In this assignment, you will create a fixed-point numeric class to represent rational numbers using ad hoc polymorphism and operator overload.
+## Exercise 02: Now we’re talking
+This exercise introduces the concept of ad-hoc polymorphism and asks us to overload the << operator to allow objects of our fixed-point class to be output to the console.
 
-### Assignment 01 - Fixed Point
-In this assignment, you will continue working on the Fixed Point numeric class created in Assignment 00. You will implement additional functions, including mathematical operations, comparison operators, and type conversion.
-
-### Assignment 02 - Account
-In this assignment, you will create a simple banking system using C++ classes. You will create classes for an account, user, and bank to simulate simple banking operations, such as opening an account, depositing and withdrawing money, and viewing the balance.
-
-### Rush01 - Spaceship Game
-For the final assignment of Day 02, you will work in a group to create a simple spaceships game using the concepts you have learned in the previous assignments.
-
-## Installation
-This project contains .cpp files in separate folders for each assignment. Each assignment folder includes a Makefile, so you can easily compile each assignment.
-
-To complete the assignments, you will need a C++ compiler (such as g++) and the Make tool. Before running these assignments, you will need to clone the project onto your computer by following the instructions in the readme.md file.
-
-This is a summary of the Day 02 project. For more detailed information on the scope and content of each assignment, please refer to the PDF file or the readme.md file.
+## Exercise 03: BSP
+This exercise explores the concept of Binary Space Partitioning (BSP) trees and asks us to write a program that generates a simple 2D BSP tree and outputs it to the console.
